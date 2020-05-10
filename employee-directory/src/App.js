@@ -1,9 +1,10 @@
 import React from "react";
 //import Data from "./Components/Data"
-import EmployeeTable from "./Components/EmployeeList";
+import EmployeeTable from "./components/EmployeeList";
 import "bootstrap/dist/css/bootstrap.min.css";
-import SearchBar from "./Components/SearchBar";
-import data from "./Components/Data.json";
+import SearchBar from "./components/SearchBar";
+import data from "./components/Data.json";
+import Title from "./components/Title";
 
 class App extends React.Component {
   constructor(props) {
@@ -15,12 +16,13 @@ class App extends React.Component {
   }
   sortBy(key) {
     this.setState({
-      
+      data: data.sort( (a,b) => a[key] > b[key])
     })
   }
   render() {
     return (
       <div>
+        <Title />
         <SearchBar />
         <EmployeeTable data={this.state.data} />;
       </div>

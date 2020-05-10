@@ -1,7 +1,7 @@
 import React from "react";
 //import Table from "react-bootstrap/Table";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Table } from "react-bootstrap";
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import { Table } from "../../node_modules/react-bootstrap";
 
 function EmployeeTable(props) {
   return (
