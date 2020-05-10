@@ -2,10 +2,11 @@ import React from "react";
 //import Table from "react-bootstrap/Table";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { Table } from "../../node_modules/react-bootstrap";
+import "../styles/EmployeeList.css"
 
 function EmployeeTable(props) {
   return (
-    <Table striped bordered hover size="sm">
+    <Table striped bordered hover small size="sm">
       <thead>
         <tr>
           <th>First Name</th>
