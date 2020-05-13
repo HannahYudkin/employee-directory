@@ -1,5 +1,4 @@
 import React from "react";
-//import Data from "./Components/Data"
 import EmployeeTable from "./components/EmployeeList";
 import "bootstrap/dist/css/bootstrap.min.css";
 import SearchBar from "./components/SearchBar";
@@ -11,6 +10,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       data: data,
+      search: ""
     };
     this.sortBy = this.sortBy.bind(this);
   }
