@@ -1,6 +1,11 @@
-/* button {
-  border-radius: 25px;
-} */
+
+button {
+  background: transparent;
+  color: white;
+  border: none;
+  text-decoration: underline;
+
+}
 
 th {
     background-color: #00695c;
@@ -8,7 +13,7 @@ th {
   }
 
 table {
-  margin: auto;
+  margin: 10px;
 }
 
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
