@@ -3,6 +3,7 @@ import EmployeeTable from "./components/EmployeeTable";
 import "bootstrap/dist/css/bootstrap.min.css";
 import data from "./components/Data.json";
 import Title from "./components/Title";
+import "./styles/App.css";
 
 class App extends React.Component {
   constructor(props) {
@@ -27,7 +28,6 @@ class App extends React.Component {
         return a[key].toLowerCase() < b[key].toLowerCase() ? 1 : -1;
       }
     });
-
     this.setState({ filteredTable: arrayCopy });
   }
 
@@ -43,9 +43,9 @@ class App extends React.Component {
     console.log(this.state.searchFirst)
     // If theres no search or it is an empty string just return the unfiltered data
     if (
-      this.state.searchFirst == null ||
-      this.state.searchFirst == "" ||
-      this.state.searchFirst == " "
+      this.state.searchFirst === null ||
+      this.state.searchFirst === "" ||
+      this.state.searchFirst === " "
     ) {
       this.setState({ filteredTable: data });
     } else {
@@ -78,7 +78,7 @@ class App extends React.Component {
       <div>
         <Title />
         <form className="form">
-          <input
+          <input className="search-bar"
             value={this.state.searchFirst}
             name="searchFirst"
             onChange={this.handleInputChange}
