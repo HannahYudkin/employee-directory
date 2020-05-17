@@ -22,4 +22,4 @@ Visit this link to see the deployed application - https://hannahyudkin.github.io
 
 ## Preview
 
-![Preview](https://github.com/HannahYudkin/employee-directory/blob/master/employee-directory/src/images/EmployeeDirectory.png)
+![Preview](https://github.com/HannahYudkin/employee-directory/blob/master/src/images/EmployeeDirectory.png)
