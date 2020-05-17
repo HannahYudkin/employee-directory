@@ -22,4 +22,4 @@ Visit this link to see the deployed application - https://olivial18.github.io/Re
 
 ## Preview
 
-![Preview](./employee-directory/images/EmployeeDirectory.png)
+![Preview](https://github.com/HannahYudkin/employee-directory/blob/master/employee-directory/src/images/EmployeeDirectory.png)
